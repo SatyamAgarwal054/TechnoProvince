@@ -1711,3 +1711,6 @@ section,
   /* Add your styles here */
 }
 
+.p{
+  text-align: justify;
+}
