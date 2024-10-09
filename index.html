@@ -46,8 +46,16 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about call-to-action">About</a></li>
-          <li><a href="#services call-to-action">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="itservice.html">IT-Services</a></li>
+              <li><a href="digitalm.html">Digital Marketing</a></li>
+              <li><a href="scrapd.html">Data Scraping</a></li>
+              <li><a href="vdeo.html">Video and Animations</a></li>
+              <!-- <li><a href="term.html">Terms and Conditions</a></li> -->
+            </ul>
+          </li>
           <li><a href="#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -59,7 +67,10 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+      <a class="btn-getstarted text-dark fs-6 " href="#contact">
+        <span class="spinner-grow spinner-grow-sm text-danger" role="status" aria-hidden="true"></span>
+        Schedule Now
+      </a>
 
     </div>
   </header>
@@ -112,51 +123,7 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- About Section -->
-    <section id="about call-to-action" class="about section call-to-action section dark-background">
-      <img src="assets/img/aboutbackgroung.jpg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-15 order-2 order-lg-1 content">
-            <h4 class="text-center bg-white text-dark h-14 p-2 text-decoration-underline fw-bold ">About us</h4>
-            <h5 class="text-center mt-5 font-dark">
-              Welcome to Techno Province, your trusted partner in technology solutions!.
-            </h5>
-            <!-- <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-              </li>
-              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
-                  velit.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
-                  pariatur.</span></li>
-            </ul> -->
-            <p class="p">
-              At Techno Province, we are dedicated to delivering innovative and reliable technology outsourcing services
-              to businesses of all sizes. With a strong focus on data scraping, web scraping, data anaylsis, devlopment
-              and automation we have been a rapidly grwoing company in the industry since 2021.
-            </p>
-            <p class="p">Our mission is to empower businesses by providing them with cost-effective, scalable, and cutting-edge
-              technology solutions. We understand the challenges that businesses face in today's rapidly evolving
-              digital landscape, and our goal is to help our clients overcome these challenges and achieve their full
-              potential.</p>
-            <p class="p">What sets us apart is our commitment to excellence, integrity, and client satisfaction. We take pride in
-              our team of highly skilled professionals who are experts in their respective fields. Our team's collective
-              expertise enables us to deliver custom solutions that meet the unique needs of each client.</p>
-            <p class="p">Throughout our journey, we have had the privilege of serving a diverse range of clients across various
-              industries. Our experience, coupled with our passion for technology, has allowed us to build long-lasting
-              relationships with our clients and achieve exceptional results.</p>
-            <p>Thank you for considering Techno Province for your technology outsourcing needs. We are committed to
-              providing you with the highest quality services and look forward to the opportunity to serve you.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
+   
 
 
     <!-- Services Section -->
@@ -173,8 +140,8 @@
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
+          <div class="col-lg-3 col-md-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative rounded">
               <div class="icon">
                 <i class="bi bi-code-square"></i>
               </div>
@@ -185,8 +152,8 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative rounded">
               <div class="icon">
                 <i class="bi bi-disc"></i>
               </div>
@@ -197,8 +164,8 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative rounded">
               <div class="icon">
                 <i class="bi bi-camera-video"></i>
               </div>
@@ -209,8 +176,8 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative rounded">
               <div class="icon">
                 <i class="bi bi-fullscreen-exit"></i>
               </div>
@@ -272,11 +239,22 @@
 
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
+                  <i class="bi bi-calendar2-range flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="04" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                    <p><strong>Years Experience</strong></p>
+                  </div>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
                   <i class="bi bi-emoji-smile flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                    <span data-purecounter-start="0" data-purecounter-end="76" data-purecounter-duration="1"
                       class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+                    <p><strong>Happy Clients</strong></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -285,9 +263,9 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-journal-richtext flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                    <span data-purecounter-start="0" data-purecounter-end="180" data-purecounter-duration="1"
                       class="purecounter"></span>
-                    <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+                    <p><strong>Projects</strong></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -297,7 +275,7 @@
                   <i class="bi bi-headset flex-shrink-0"></i>
                   <div>
                     <h1><strong>24/7</strong></h1>
-                    <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+                    <p><strong>Hours Of Support</strong></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -308,7 +286,7 @@
                   <div>
                     <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
                       class="purecounter"></span>
-                    <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                    <p><strong>Hard Workers</strong></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -380,7 +358,7 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Vishal is knowledgeable, articulate, and a pleasure to work with. He had
+                  <span>Team at TPS is knowledgeable, articulate, and a pleasure to work with. He had
                     interacted with me for couple of roles in his previous organizations and he is
                     somebody that can be trusted and looked forward to support and information
                     in his domain. He brings integrity, positivity and intelligence to his work, and I believe his overall presence positively impacted his organizations.
@@ -390,61 +368,7 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
-                    velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-                    veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-                    culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-                    quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>End testimonial item -->
+            
 
           </div>
           <div class="swiper-pagination"></div>
@@ -455,43 +379,65 @@
     </section><!-- /Testimonials Section -->
 
 
-     <!-- Founder Section -->
-    <section id="stats" class="stats section">
+     <!-- Team Section -->
+     <section id="team" class="team section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>our Team</p>
+      </div><!-- End Section Title -->
 
-        <div class="row gy-4 align-items-center justify-content-between">
+      <div class="container">
 
-          <div class="col-lg-5">
-            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-          </div>
-          
+        <div class="row gy-3 d-flex justify-content-between">
 
-          <div class="col-lg-6">
+          <div class="col-lg-3 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
-            <h3 class="fw-bold fs-2 mb-3">Founder - Vishal Chhabra</h3>
-            <p class="p">
-              With over 20 years of extensive experience in customer experience, contact center
-              services, the travel and tourism industry, technology, and consulting, I founded
-              Travel Province Solutions. Our vision was to revolutionize the travel and tourism
-              industry, and four years later, we have become a leading travel, technology, and
-              outsourcing company.At Travel Province Solutions, we offer a wide range of business support services to
-              allow companies to focus on their core operations while we handle the back-end
-              operations and support. We cater to both international (Israel) and domestic clients,
-              providing top-notch services with a team of experienced professionals skilled in
-              customer services, contact center services, automation and technology, QA, semi technical operations, data mapping, data scraping, reservations, and more.
-              Our robust infrastructure and technology platform ensure the delivery of high quality and secure services. We will collaborate with you to develop, manage, and
-              implement business strategies that guarantee the utmost success of your processes.
-              Join us on this journey to excellence and let us take your business to new heights!
-            </p>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
-          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+         
 
         </div>
 
       </div>
 
-    </section><!-- /Founder Section -->
+    </section><!-- /Team Section -->
 
 
     <!-- Contact Section -->
@@ -514,7 +460,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>F-9A, Galaxy Blue Sapphire Plaza Greater Noida</p>
+                <p>Suite Number 1806, Sapphire Suites, Galaxy Blue Sapphire, Greater Noida West, 201318, National Capital Region, New Delhi</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -590,8 +536,8 @@
             </a>
 
             <div class="footer-contact pt-3">
-              <p>F-9A, Galaxy Blue Sapphire Plaza</p>
-              <p>Greater Noida</p>
+              <p>Suite Number 1806, Sapphire Suites, Galaxy Blue Sapphire, Greater Noida West, 201318, National Capital Region, New Delhi</p>
+              <!-- <p>Greater Noida</p> -->
               <p class="mt-3"><strong>Phone:</strong> <span>+91 9811262560</span></p>
               <p><strong>Email:</strong> <span>info@travelprovince.com</span></p>
             </div>
@@ -633,10 +579,41 @@
 
   </footer>
 
+  <!--Inquiry-->
+  <section id="stats" class="stats section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4 align-items-center">
+
+        <div class="col-lg-3">
+          <img src="assets/img/project.png" alt="" class="img-fluid rounded">
+        </div>
+
+        <div class="col-lg-6">
+
+          <h3 class="fw-bold fs-4 mb-3">Want to hear more?</h3>
+          <p class="align-item-justify">
+            "Our work is dedicated to delivering innovative solutions tailored to meet your unique needs, ensuring
+            excellence at every step."
+          </p>
+          <a class="text-dark fs-6 border align-items-center px-2 p-2 rounded bg-warning" href="#contact">
+            <span class="spinner-grow spinner-grow-sm text-dark fw-darker" role="status" aria-hidden="true"></span>
+            Schedule Now
+          </a>
+          
+     
+     </div>
+   </div>
+  </div>
+</section>
+<!--inquiry end-->
+      
+
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="https://wa.me/919811262560" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-whatsapp text-white"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
