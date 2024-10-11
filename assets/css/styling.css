@@ -34,8 +34,9 @@
 }
 .center h1{
 	color: #fff;
-	font-size: 4rem;
+	font-size: 3.5rem;
 	text-align: center;
+	text-decoration: underline;
 }
 .box{
 	padding: 16px;
@@ -44,7 +45,7 @@
 	transition: all .38s ease;
 }
 .box h3{
-	font-size: 19px;
+	font-size: 16px;
 	font-weight: 600;
 	color: #fff;
 	margin-bottom: 8px;
@@ -52,7 +53,7 @@
 .box h5{
 	font-size: 15px;
 	font-weight: 600;
-	color: #b7b4bb;
+	color: #FFC451;
 	margin-bottom: 15px;
 	letter-spacing: 2px;
 }
@@ -79,5 +80,11 @@
 	}
 	.center h1{
 		font-size: 3.2rem;
+	}
+	
+}
+@media(max-width:510px){
+	.box h5{
+		font-size: 11px;
 	}
 }
